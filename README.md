@@ -30,7 +30,7 @@ class LabelSmoothingCrossEntropy(nn.Module):
 from utils import LabelSmoothingCrossEntropy
 
 criterion = LabelSmoothingCrossEntropy()
-loss = criterion(outputs, targets)\
+loss = criterion(outputs, targets)
 loss.backward()
 optimizer.step()
 ```
